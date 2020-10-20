@@ -1,10 +1,8 @@
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
-    const person1Input = $("input#person1").val();
-    const cap = person1Input.charAt(0).toUpperCase();
-    const capName = person1Input.str.slice(1).concat(cap);
-    // person1Input = capName;
-    $(".person1").text(capName);
+    let person1Input = $("input#person1").val();
+    person1Input = person1Input.toUpperCase();
+    $(".person1").text(person1Input);
 
     $("#Letter").show();
 
